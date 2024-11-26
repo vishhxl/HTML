@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+
+    :root{
+        --b:#1234EE;
+        --all:solid dotted dashed double;
+        --b1:3px solid red;
+
+    }
+    p{
+        --b:brown;
+        color:var(--b);
+        border-style:var(--all);
+        border-width:10px;
+        padding: 20px;
+        --c:(center);
+
+
+
+    }
+    h1{
+        color: var(--b);
+        text-align: var(--c);
+        text-align: center;
+    }
+       
+  </style>
+  <body>
+    <h1>Hello</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil temporibus
+      esse expedita enim animi nam optio adipisci voluptates, exercitationem,
+      cupiditate corrupti debitis sequi ab error ratione quis dolore libero
+      quasi.
+    </p>
+  </body>
+</html>

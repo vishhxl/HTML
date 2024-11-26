@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Banner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .banner {
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+            padding: 20px 0;
+        }
+        .banner p {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 2em;
+            color: red;
+            background-color: black;
+            animation: moveBanner 5s linear infinite;
+            animation-delay: 1s;
+        }
+        @keyframes moveBanner {
+            0% {
+                left: -100%;
+            }
+            50% {
+                left: 100%;
+            }
+            100% {
+                left: -100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <p>Huge Sale! Don't Miss Out!</p>
+    </div>
+</body>
+</html>

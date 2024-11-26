@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Basic reset for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the tables to be side by side */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Style for the blue table */
+.table-blue {
+    width: 50%;
+    background-color: blue;
+    color: white;
+    border-collapse: collapse;
+}
+
+.table-blue td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+/* Style for the green table */
+.table-green {
+    width: 50%;
+    background-color: green;
+    color: white;
+    border-collapse: collapse;
+}
+
+.table-green td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+/* Media Query for portrait mode */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .table-blue {
+        background-color: green;
+    }
+
+    .table-green {
+        background-color: blue;
+    }
+}
+
+</style>
+<body>
+    <div class="container">
+        <table class="table-blue">
+            <tr><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+            <tr><td>7</td><td>8</td><td>9</td></tr>
+        </table>
+        <table class="table-green">
+            <tr><td>A</td><td>B</td><td>C</td></tr>
+            <tr><td>D</td><td>E</td><td>F</td></tr>
+            <tr><td>G</td><td>H</td><td>I</td></tr>
+        </table>
+    </div>
+</body>
+</html>
+
+</body>
+</html>

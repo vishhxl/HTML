@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p::first-line{
+        color: aqua;
+        font-weight: bolder;
+        text-transform: capitalize;
+        font-size: 18px;
+        text-decoration: underline;
+
+
+    }
+    
+    p::first-letter{
+        color: red;
+        font-size: 60px;
+        text-indent: 20px;
+    }
+    h2::before{
+       content:  url(image6.jpg);
+
+
+    }
+    h2::after{
+        content: " keep smiling";
+    }
+    .ul1 li::marker{
+        font-size: 30px;
+        color: rgb(255,0,0);
+    }
+    .ul1 li{
+        font-size: 25px;
+        color: rgb(0,0,255);
+    }
+    .ul2 li::marker{
+        content: "#";
+        color: #00ff00;
+        font-size: 40px;
+    }
+    ::selection{
+        background-color: #f00;
+        color: #fff;
+    }
+
+
+
+</style>
+<body>
+    <p>Hello Gusys</p>
+     <h2>spred  smile wherever you go</h2>
+    <ul class="ul1"><li>Lits1</li><li>Lits2</li></ul>
+    <ul class="ul2"><li>Html</li><li>Css</li></ul>
+    <p>- - - </p>
+</body>
+</html>
